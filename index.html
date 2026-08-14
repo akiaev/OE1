@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aev. Art Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header-->
+    <header>
+        <img src="images/logo.png" alt="My Site logo" class="logo">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="mainNav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#portfolio" class="nav-link">Work</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="sky-to-sea">
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Background Art -->
+            <div class="scenery">
+                <img src="images/tree.png" alt="" class="scenery-layer layer-trees">
+                <img src="images/Aev Logo Animated.webp" alt="" class="scenery-layer layer-logo">
+            </div>
+            <!-- Clouds -->
+            <div class="clouds">
+                <img src="images/cloud1.png" alt="" class="cloud cloud-1">
+                <img src="images/cloud2.png" alt="" class="cloud cloud-2">
+                <img src="images/cloud3.png" alt="" class="cloud cloud-3">
+                <img src="images/cloud4.png" alt="" class="cloud cloud-4">
+            </div>
+            <div class="hero-text">
+                <h1>ART.<br>EXPRESSION.<br>VISION.</h1>
+                <p>
+                    Hi! I'm Mark Aaron Herrero. I'm a Multimedia Artist passionate about bringing ideas to life through illustration, design, and visual storytelling.
+                </p>
+                <button class="btn btn-learnmore" onclick="showMessage()">Learn more</button>
+                <p class="class-info">
+                    <span>ITC</span>
+                    <span>CS 1-1</span>
+                </p>
+            </div>
+        </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-wrap" id="portfolio">
+        <div class="portfolio">
+            <div class="portfolio-header">
+                <div class="portfolio-icon">
+                    <img src="images/hehehe.jpg" alt="">
+                </div>
+                <h2>Portfolio 2026</h2>
+            </div>
+            <div class="portfolio-list">
+                <video src="images/portfolio.mp4" class="portfolio-img portfolio-video" autoplay muted loop playsinline></video>
+                <img src="images/character.png" alt="Character" class="portfolio-img">
+                <img src="images/logos.png" alt="Logos" class="portfolio-img">
+                <img src="images/logosheet.png" alt="Logosheet" class="portfolio-img">
+                <img src="images/illustrations.png" alt="Illustrations" class="portfolio-img">
+                <img src="images/illustrations1.png" alt="Stacked House" class="portfolio-img">
+                <img src="images/illustrations2.png" alt="Castle" class="portfolio-img">
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+    <div class="footer-top">
+        <div class="footer-brand-col">
+            <div class="footer-brand">
+                <img src="images/logo2.png" alt="" class="footer-logo">
+                <span class="footer-wordmark">Aev.</span>
+            </div>
+            <p class="footer-thanks">LET'S CONNECT!</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/arnherrero/" target="_blank" class="pill pill-periwinkle">Facebook</a>
+            <a href="https://www.instagram.com/arnherrero/" target="_blank" class="pill pill-mauve">Instagram</a>
+            <a href="https://www.behance.net/aevarts" target="_blank" class="pill pill-icylav">Behance</a>
+            <a href="https://www.youtube.com/watch?v=QDia3e12czc" target="_blank" class="pill pill-emberred">Youtube</a>
+            <a href="https://github.com/akiaev" target="_blank" class="pill pill-silver">Github</a>
+        </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+        <p class="copyright">Herrero, Mark Aaron &copy; 2026 Copyright</p>
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav-link">Home</a>
+            <a href="#portfolio" class="footer-nav-link">Work</a>
+            <button class="footer-nav-link footer-contact-btn" onclick="showEmail()">Contact</button>
+        </nav>
+    </div>
+</footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
